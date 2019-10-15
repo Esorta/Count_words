@@ -6,6 +6,10 @@ def home(request):
     return render(request, 'home.html')
 
 
+def about(request):
+    return render(request, 'about.html')
+
+
 def count(request):
     total_count = len(request.GET['text'])
     user_text = request.GET['text']
